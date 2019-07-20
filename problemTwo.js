@@ -10,13 +10,13 @@ function FibonacciSequence(firstNum, secondNum, range){
         firstNum = secondNum;
         secondNum = newNum;
         result.push(newNum);
-        if (result[i]%2 === 0){
-            sum = sum + result[i];
+        if (newNum%2 === 0){
+            sum = sum + newNum;
             sumView.push(sum);
         }
     }
-
-    console.log(sumView, sum);
+    console.log("sum array:" , sumView);
+    console.log(sum);
     console.log(result);
 }
 FibonacciSequence(1,2,15);
