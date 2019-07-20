@@ -1,5 +1,5 @@
 //prime factorization 
-var num = 1200,
+var num = 600851475143,
     primeArr = [],
     isPrime;
 
@@ -26,5 +26,6 @@ for(i = 2; i <= num; i++){
     }
   }
 }
-console.log(primeArr);   
+console.log(primeArr); // printing prime factor
+console.log(Math.max(...primeArr)); //printing the largest prime factor
 
