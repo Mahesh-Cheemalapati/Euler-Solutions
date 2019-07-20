@@ -1,7 +1,7 @@
 //prime factorization 
-var num = 600851475143,
-    primeArr = [],
-    isPrime;
+var num = 600851475143;
+var primeArr = [];
+var isPrime;
 
 //find divisors starting with 2
 
