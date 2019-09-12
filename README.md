@@ -1,37 +1,86 @@
-## Welcome to GitHub Pages
+## Euler Solutions
+> If you have ever checked out [Euler Archives] (https://projecteuler.net/archives) to practice some coding  
+> Here are some solutions to the problems you see there
 
-You can use the [editor on GitHub](https://github.com/Mahesh-Cheemalapati/eulerSolutions/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- ** Multiples of 3 and 5 **
+```
+console.log('sum of multiples of 3 and 5');
+function multiplesOf(range){
+    let multiple = [];
+    let sum = 0;
+    for (let i=1; i<range; i++){
+        if(i%3===0 || i%5===0){
+            multiple.push(i);
+        }
+    }
+    for (let i=0; i<=multiple.length-1; i++){
+        sum = sum + multiple[i];
+    }
+    console.log(multiple);
+    console.log(sum);
+}
+multiplesOf(10000);
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- ** Even Fibonacci Series **
 
-### Jekyll Themes
+```
+console.log("Fibonacci Sequence");
+function FibonacciSequence(firstNum, secondNum, range){
+    var newNum;
+    let sum = 0;
+    let sumView = [];
+    let result = [firstNum, secondNum];
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mahesh-Cheemalapati/eulerSolutions/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    for(var i=0; i<range; i++){
+        newNum = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = newNum;
+        result.push(newNum);
+        if (newNum%2 === 0){
+            sum = sum + newNum;
+            sumView.push(sum);
+        }
+    }
+    console.log("sum array:" , sumView);
+    console.log(sum);
+    console.log(result);
+}
+FibonacciSequence(1,2,15);
+```
+- ** Largest Prime Factor **
 
-### Support or Contact
+```
+//prime factorization 
+var num = 600851475143;
+var primeArr = [];
+var isPrime;
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+//find divisors starting with 2
+
+for(i = 2; i <= num; i++){
+  if (num % i==0) {
+
+    //check if divisor is prime
+    for(var j = 2; j <= i/2; j++) {
+      if(i % j == 0) {
+        isPrime = false;
+      } else {
+        isPrime = true;
+      }
+    }
+
+    //if the divisor is prime
+
+    if (isPrime == true) {
+      //divide integer by prime factor & factor store in array primeArray
+      num /= i
+      primeArr.push(i);
+    }
+  }
+}
+console.log(primeArr); // printing prime factor
+console.log(Math.max(...primeArr)); //printing the largest prime factor
+```
+
+> Will update more solutions soon
