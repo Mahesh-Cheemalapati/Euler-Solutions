@@ -1,6 +1,8 @@
 ## Euler Solutions
 > If you have ever checked out [Euler Archives](https://projecteuler.net/archives) to practice some coding  
-> Here are some solutions to the problems you see there
+> Here are some solutions to the problems 
+> The solutions are written in *Javascript*
+> You can find the repository [here](https://github.com/Mahesh-Cheemalapati/Euler-Solutions)
 
 - ***Multiples of 3 and 5***
 ```
