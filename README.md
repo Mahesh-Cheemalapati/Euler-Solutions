@@ -1,7 +1,7 @@
 ## Euler Solutions
 > If you have ever checked out [Euler Archives](https://projecteuler.net/archives) to practice some coding  
-> Here are some solutions to the problems 
-> The solutions are written in *Javascript*
+> Here are some solutions to the problems, 
+> the solutions are written in *Javascript*
 
 - ***Multiples of 3 and 5***
 ```
