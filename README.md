@@ -1,8 +1,8 @@
 ## Euler Solutions
-> If you have ever checked out [Euler Archives] (https://projecteuler.net/archives) to practice some coding  
+> If you have ever checked out [Euler Archives](https://projecteuler.net/archives) to practice some coding  
 > Here are some solutions to the problems you see there
 
-- ** Multiples of 3 and 5 **
+- ***Multiples of 3 and 5***
 ```
 console.log('sum of multiples of 3 and 5');
 function multiplesOf(range){
@@ -22,7 +22,7 @@ function multiplesOf(range){
 multiplesOf(10000);
 ```
 
-- ** Even Fibonacci Series **
+- ***Even Fibonacci Series***
 
 ```
 console.log("Fibonacci Sequence");
@@ -48,7 +48,7 @@ function FibonacciSequence(firstNum, secondNum, range){
 }
 FibonacciSequence(1,2,15);
 ```
-- ** Largest Prime Factor **
+- ***Largest Prime Factor***
 
 ```
 //prime factorization 
