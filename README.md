@@ -85,5 +85,3 @@ for(i = 2; i <= num; i++){
 console.log(primeArr); // printing prime factor
 console.log(Math.max(...primeArr)); //printing the largest prime factor
 ```
-
-> Will update more solutions soon
